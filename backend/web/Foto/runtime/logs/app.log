@@ -1,0 +1,693 @@
+2018-04-30 23:42:43 [::1][1][fkm0bj8nhsbkf47h07ue6m8uh2][error][yii\base\ViewNotFoundException] yii\base\ViewNotFoundException: The view file does not exist: C:\xampp\htdocs\sidokumentasi\backend\web\Foto\views\albums\viewalbum.php in C:\xampp\htdocs\sidokumentasi\vendor\yiisoft\yii2\base\View.php:229
+Stack trace:
+#0 C:\xampp\htdocs\sidokumentasi\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(backend\controllers\AlbumsController))
+#1 C:\xampp\htdocs\sidokumentasi\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('viewalbum', Array, Object(backend\controllers\AlbumsController))
+#2 C:\xampp\htdocs\sidokumentasi\backend\controllers\AlbumsController.php(61): yii\base\Controller->render('viewalbum', Array)
+#3 [internal function]: backend\controllers\AlbumsController->actionViewalbum('15')
+#4 C:\xampp\htdocs\sidokumentasi\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#5 C:\xampp\htdocs\sidokumentasi\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\sidokumentasi\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('viewalbum', Array)
+#7 C:\xampp\htdocs\sidokumentasi\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('albums/viewalbu...', Array)
+#8 C:\xampp\htdocs\sidokumentasi\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\xampp\htdocs\sidokumentasi\backend\web\index.php(17): yii\base\Application->run()
+#10 {main}
+2018-04-30 23:42:43 [::1][1][fkm0bj8nhsbkf47h07ue6m8uh2][info][application] $_GET = [
+    'id' => '15'
+]
+
+$_COOKIE = [
+    '_csrf-backend' => 'd28ecd4a93c2a888b6d91a92d411d20ca9a9d9748cea21fc00754511fbc79ee9a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"QWU6Cv1To6_iQYSxydn2IBNgGf6T6Tb1\";}'
+    'advanced-backend' => 'fkm0bj8nhsbkf47h07ue6m8uh2'
+    '_identity-backend' => 'fe9b2a2c19da0b96dc8528a624b038b7340eee2e53da66a951ac4ebd48d7bdeba:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"pGqGiG3c0DYvW2_QQS6amtpM-7DVegzD\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost/sidokumentasi/backend/web/index.php/albums/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7,ms;q=0.6'
+    'HTTP_COOKIE' => '_csrf-backend=d28ecd4a93c2a888b6d91a92d411d20ca9a9d9748cea21fc00754511fbc79ee9a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22QWU6Cv1To6_iQYSxydn2IBNgGf6T6Tb1%22%3B%7D; advanced-backend=fkm0bj8nhsbkf47h07ue6m8uh2; _identity-backend=fe9b2a2c19da0b96dc8528a624b038b7340eee2e53da66a951ac4ebd48d7bdeba%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22pGqGiG3c0DYvW2_QQS6amtpM-7DVegzD%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\xampp\\php;C:\\composer;C:\\Program Files\\Git\\cmd;C:\\Users\\Novia\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Novia\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Novia\\AppData\\Local\\GitHubDesktop\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.29 (Win32) OpenSSL/1.1.0g PHP/7.2.0 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Win32) OpenSSL/1.1.0g PHP/7.2.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/sidokumentasi/backend/web/index.php'
+    'REMOTE_PORT' => '64962'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=15'
+    'REQUEST_URI' => '/sidokumentasi/backend/web/index.php/albums/viewalbum?id=15'
+    'SCRIPT_NAME' => '/sidokumentasi/backend/web/index.php'
+    'PATH_INFO' => '/albums/viewalbum'
+    'PATH_TRANSLATED' => 'C:\\xampp\\htdocs\\albums\\viewalbum'
+    'PHP_SELF' => '/sidokumentasi/backend/web/index.php/albums/viewalbum'
+    'REQUEST_TIME_FLOAT' => 1525124563.42
+    'REQUEST_TIME' => 1525124563
+]
+2018-04-30 23:46:34 [::1][1][fkm0bj8nhsbkf47h07ue6m8uh2][error][yii\base\ViewNotFoundException] yii\base\ViewNotFoundException: The view file does not exist: C:\xampp\htdocs\sidokumentasi\backend\web\Foto\views\albums\viewalbum.php in C:\xampp\htdocs\sidokumentasi\vendor\yiisoft\yii2\base\View.php:229
+Stack trace:
+#0 C:\xampp\htdocs\sidokumentasi\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(backend\controllers\AlbumsController))
+#1 C:\xampp\htdocs\sidokumentasi\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('viewalbum', Array, Object(backend\controllers\AlbumsController))
+#2 C:\xampp\htdocs\sidokumentasi\backend\controllers\AlbumsController.php(61): yii\base\Controller->render('viewalbum', Array)
+#3 [internal function]: backend\controllers\AlbumsController->actionViewalbum('15')
+#4 C:\xampp\htdocs\sidokumentasi\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#5 C:\xampp\htdocs\sidokumentasi\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\sidokumentasi\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('viewalbum', Array)
+#7 C:\xampp\htdocs\sidokumentasi\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('albums/viewalbu...', Array)
+#8 C:\xampp\htdocs\sidokumentasi\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\xampp\htdocs\sidokumentasi\backend\web\index.php(17): yii\base\Application->run()
+#10 {main}
+2018-04-30 23:46:34 [::1][1][fkm0bj8nhsbkf47h07ue6m8uh2][info][application] $_GET = [
+    'id' => '15'
+]
+
+$_COOKIE = [
+    '_csrf-backend' => 'd28ecd4a93c2a888b6d91a92d411d20ca9a9d9748cea21fc00754511fbc79ee9a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"QWU6Cv1To6_iQYSxydn2IBNgGf6T6Tb1\";}'
+    'advanced-backend' => 'fkm0bj8nhsbkf47h07ue6m8uh2'
+    '_identity-backend' => 'fe9b2a2c19da0b96dc8528a624b038b7340eee2e53da66a951ac4ebd48d7bdeba:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"pGqGiG3c0DYvW2_QQS6amtpM-7DVegzD\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost/sidokumentasi/backend/web/index.php/albums/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7,ms;q=0.6'
+    'HTTP_COOKIE' => '_csrf-backend=d28ecd4a93c2a888b6d91a92d411d20ca9a9d9748cea21fc00754511fbc79ee9a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22QWU6Cv1To6_iQYSxydn2IBNgGf6T6Tb1%22%3B%7D; advanced-backend=fkm0bj8nhsbkf47h07ue6m8uh2; _identity-backend=fe9b2a2c19da0b96dc8528a624b038b7340eee2e53da66a951ac4ebd48d7bdeba%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22pGqGiG3c0DYvW2_QQS6amtpM-7DVegzD%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\xampp\\php;C:\\composer;C:\\Program Files\\Git\\cmd;C:\\Users\\Novia\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Novia\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Novia\\AppData\\Local\\GitHubDesktop\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.29 (Win32) OpenSSL/1.1.0g PHP/7.2.0 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Win32) OpenSSL/1.1.0g PHP/7.2.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/sidokumentasi/backend/web/index.php'
+    'REMOTE_PORT' => '64992'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=15'
+    'REQUEST_URI' => '/sidokumentasi/backend/web/index.php/albums/viewalbum?id=15'
+    'SCRIPT_NAME' => '/sidokumentasi/backend/web/index.php'
+    'PATH_INFO' => '/albums/viewalbum'
+    'PATH_TRANSLATED' => 'C:\\xampp\\htdocs\\albums\\viewalbum'
+    'PHP_SELF' => '/sidokumentasi/backend/web/index.php/albums/viewalbum'
+    'REQUEST_TIME_FLOAT' => 1525124794.108
+    'REQUEST_TIME' => 1525124794
+]
+2018-04-30 23:46:56 [::1][1][fkm0bj8nhsbkf47h07ue6m8uh2][error][yii\base\ViewNotFoundException] yii\base\ViewNotFoundException: The view file does not exist: C:\xampp\htdocs\sidokumentasi\backend\web\Foto\views\albums\viewalbum.php in C:\xampp\htdocs\sidokumentasi\vendor\yiisoft\yii2\base\View.php:229
+Stack trace:
+#0 C:\xampp\htdocs\sidokumentasi\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(backend\controllers\AlbumsController))
+#1 C:\xampp\htdocs\sidokumentasi\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('viewalbum', Array, Object(backend\controllers\AlbumsController))
+#2 C:\xampp\htdocs\sidokumentasi\backend\controllers\AlbumsController.php(61): yii\base\Controller->render('viewalbum', Array)
+#3 [internal function]: backend\controllers\AlbumsController->actionViewalbum('15')
+#4 C:\xampp\htdocs\sidokumentasi\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#5 C:\xampp\htdocs\sidokumentasi\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\sidokumentasi\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('viewalbum', Array)
+#7 C:\xampp\htdocs\sidokumentasi\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('albums/viewalbu...', Array)
+#8 C:\xampp\htdocs\sidokumentasi\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\xampp\htdocs\sidokumentasi\backend\web\index.php(17): yii\base\Application->run()
+#10 {main}
+2018-04-30 23:46:56 [::1][1][fkm0bj8nhsbkf47h07ue6m8uh2][info][application] $_GET = [
+    'id' => '15'
+]
+
+$_COOKIE = [
+    '_csrf-backend' => 'd28ecd4a93c2a888b6d91a92d411d20ca9a9d9748cea21fc00754511fbc79ee9a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"QWU6Cv1To6_iQYSxydn2IBNgGf6T6Tb1\";}'
+    'advanced-backend' => 'fkm0bj8nhsbkf47h07ue6m8uh2'
+    '_identity-backend' => 'fe9b2a2c19da0b96dc8528a624b038b7340eee2e53da66a951ac4ebd48d7bdeba:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"pGqGiG3c0DYvW2_QQS6amtpM-7DVegzD\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost/sidokumentasi/backend/web/index.php/albums/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7,ms;q=0.6'
+    'HTTP_COOKIE' => '_csrf-backend=d28ecd4a93c2a888b6d91a92d411d20ca9a9d9748cea21fc00754511fbc79ee9a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22QWU6Cv1To6_iQYSxydn2IBNgGf6T6Tb1%22%3B%7D; advanced-backend=fkm0bj8nhsbkf47h07ue6m8uh2; _identity-backend=fe9b2a2c19da0b96dc8528a624b038b7340eee2e53da66a951ac4ebd48d7bdeba%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22pGqGiG3c0DYvW2_QQS6amtpM-7DVegzD%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\xampp\\php;C:\\composer;C:\\Program Files\\Git\\cmd;C:\\Users\\Novia\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Novia\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Novia\\AppData\\Local\\GitHubDesktop\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.29 (Win32) OpenSSL/1.1.0g PHP/7.2.0 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Win32) OpenSSL/1.1.0g PHP/7.2.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/sidokumentasi/backend/web/index.php'
+    'REMOTE_PORT' => '64997'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=15'
+    'REQUEST_URI' => '/sidokumentasi/backend/web/index.php/albums/viewalbum?id=15'
+    'SCRIPT_NAME' => '/sidokumentasi/backend/web/index.php'
+    'PATH_INFO' => '/albums/viewalbum'
+    'PATH_TRANSLATED' => 'C:\\xampp\\htdocs\\albums\\viewalbum'
+    'PHP_SELF' => '/sidokumentasi/backend/web/index.php/albums/viewalbum'
+    'REQUEST_TIME_FLOAT' => 1525124816.801
+    'REQUEST_TIME' => 1525124816
+]
+2018-04-30 23:46:57 [::1][1][fkm0bj8nhsbkf47h07ue6m8uh2][error][yii\base\ViewNotFoundException] yii\base\ViewNotFoundException: The view file does not exist: C:\xampp\htdocs\sidokumentasi\backend\web\Foto\views\albums\viewalbum.php in C:\xampp\htdocs\sidokumentasi\vendor\yiisoft\yii2\base\View.php:229
+Stack trace:
+#0 C:\xampp\htdocs\sidokumentasi\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(backend\controllers\AlbumsController))
+#1 C:\xampp\htdocs\sidokumentasi\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('viewalbum', Array, Object(backend\controllers\AlbumsController))
+#2 C:\xampp\htdocs\sidokumentasi\backend\controllers\AlbumsController.php(61): yii\base\Controller->render('viewalbum', Array)
+#3 [internal function]: backend\controllers\AlbumsController->actionViewalbum('15')
+#4 C:\xampp\htdocs\sidokumentasi\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#5 C:\xampp\htdocs\sidokumentasi\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\sidokumentasi\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('viewalbum', Array)
+#7 C:\xampp\htdocs\sidokumentasi\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('albums/viewalbu...', Array)
+#8 C:\xampp\htdocs\sidokumentasi\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\xampp\htdocs\sidokumentasi\backend\web\index.php(17): yii\base\Application->run()
+#10 {main}
+2018-04-30 23:46:57 [::1][1][fkm0bj8nhsbkf47h07ue6m8uh2][info][application] $_GET = [
+    'id' => '15'
+]
+
+$_COOKIE = [
+    '_csrf-backend' => 'd28ecd4a93c2a888b6d91a92d411d20ca9a9d9748cea21fc00754511fbc79ee9a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"QWU6Cv1To6_iQYSxydn2IBNgGf6T6Tb1\";}'
+    'advanced-backend' => 'fkm0bj8nhsbkf47h07ue6m8uh2'
+    '_identity-backend' => 'fe9b2a2c19da0b96dc8528a624b038b7340eee2e53da66a951ac4ebd48d7bdeba:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"pGqGiG3c0DYvW2_QQS6amtpM-7DVegzD\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost/sidokumentasi/backend/web/index.php/albums/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7,ms;q=0.6'
+    'HTTP_COOKIE' => '_csrf-backend=d28ecd4a93c2a888b6d91a92d411d20ca9a9d9748cea21fc00754511fbc79ee9a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22QWU6Cv1To6_iQYSxydn2IBNgGf6T6Tb1%22%3B%7D; advanced-backend=fkm0bj8nhsbkf47h07ue6m8uh2; _identity-backend=fe9b2a2c19da0b96dc8528a624b038b7340eee2e53da66a951ac4ebd48d7bdeba%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22pGqGiG3c0DYvW2_QQS6amtpM-7DVegzD%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\xampp\\php;C:\\composer;C:\\Program Files\\Git\\cmd;C:\\Users\\Novia\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Novia\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Novia\\AppData\\Local\\GitHubDesktop\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.29 (Win32) OpenSSL/1.1.0g PHP/7.2.0 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Win32) OpenSSL/1.1.0g PHP/7.2.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/sidokumentasi/backend/web/index.php'
+    'REMOTE_PORT' => '64999'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=15'
+    'REQUEST_URI' => '/sidokumentasi/backend/web/index.php/albums/viewalbum?id=15'
+    'SCRIPT_NAME' => '/sidokumentasi/backend/web/index.php'
+    'PATH_INFO' => '/albums/viewalbum'
+    'PATH_TRANSLATED' => 'C:\\xampp\\htdocs\\albums\\viewalbum'
+    'PHP_SELF' => '/sidokumentasi/backend/web/index.php/albums/viewalbum'
+    'REQUEST_TIME_FLOAT' => 1525124817.663
+    'REQUEST_TIME' => 1525124817
+]
+2018-04-30 23:46:58 [::1][1][fkm0bj8nhsbkf47h07ue6m8uh2][error][yii\base\ViewNotFoundException] yii\base\ViewNotFoundException: The view file does not exist: C:\xampp\htdocs\sidokumentasi\backend\web\Foto\views\albums\viewalbum.php in C:\xampp\htdocs\sidokumentasi\vendor\yiisoft\yii2\base\View.php:229
+Stack trace:
+#0 C:\xampp\htdocs\sidokumentasi\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(backend\controllers\AlbumsController))
+#1 C:\xampp\htdocs\sidokumentasi\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('viewalbum', Array, Object(backend\controllers\AlbumsController))
+#2 C:\xampp\htdocs\sidokumentasi\backend\controllers\AlbumsController.php(61): yii\base\Controller->render('viewalbum', Array)
+#3 [internal function]: backend\controllers\AlbumsController->actionViewalbum('15')
+#4 C:\xampp\htdocs\sidokumentasi\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#5 C:\xampp\htdocs\sidokumentasi\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\sidokumentasi\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('viewalbum', Array)
+#7 C:\xampp\htdocs\sidokumentasi\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('albums/viewalbu...', Array)
+#8 C:\xampp\htdocs\sidokumentasi\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\xampp\htdocs\sidokumentasi\backend\web\index.php(17): yii\base\Application->run()
+#10 {main}
+2018-04-30 23:46:57 [::1][1][fkm0bj8nhsbkf47h07ue6m8uh2][info][application] $_GET = [
+    'id' => '15'
+]
+
+$_COOKIE = [
+    '_csrf-backend' => 'd28ecd4a93c2a888b6d91a92d411d20ca9a9d9748cea21fc00754511fbc79ee9a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"QWU6Cv1To6_iQYSxydn2IBNgGf6T6Tb1\";}'
+    'advanced-backend' => 'fkm0bj8nhsbkf47h07ue6m8uh2'
+    '_identity-backend' => 'fe9b2a2c19da0b96dc8528a624b038b7340eee2e53da66a951ac4ebd48d7bdeba:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"pGqGiG3c0DYvW2_QQS6amtpM-7DVegzD\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost/sidokumentasi/backend/web/index.php/albums/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7,ms;q=0.6'
+    'HTTP_COOKIE' => '_csrf-backend=d28ecd4a93c2a888b6d91a92d411d20ca9a9d9748cea21fc00754511fbc79ee9a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22QWU6Cv1To6_iQYSxydn2IBNgGf6T6Tb1%22%3B%7D; advanced-backend=fkm0bj8nhsbkf47h07ue6m8uh2; _identity-backend=fe9b2a2c19da0b96dc8528a624b038b7340eee2e53da66a951ac4ebd48d7bdeba%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22pGqGiG3c0DYvW2_QQS6amtpM-7DVegzD%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\xampp\\php;C:\\composer;C:\\Program Files\\Git\\cmd;C:\\Users\\Novia\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Novia\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Novia\\AppData\\Local\\GitHubDesktop\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.29 (Win32) OpenSSL/1.1.0g PHP/7.2.0 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Win32) OpenSSL/1.1.0g PHP/7.2.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/sidokumentasi/backend/web/index.php'
+    'REMOTE_PORT' => '65001'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=15'
+    'REQUEST_URI' => '/sidokumentasi/backend/web/index.php/albums/viewalbum?id=15'
+    'SCRIPT_NAME' => '/sidokumentasi/backend/web/index.php'
+    'PATH_INFO' => '/albums/viewalbum'
+    'PATH_TRANSLATED' => 'C:\\xampp\\htdocs\\albums\\viewalbum'
+    'PHP_SELF' => '/sidokumentasi/backend/web/index.php/albums/viewalbum'
+    'REQUEST_TIME_FLOAT' => 1525124817.917
+    'REQUEST_TIME' => 1525124817
+]
+2018-04-30 23:46:58 [::1][1][fkm0bj8nhsbkf47h07ue6m8uh2][error][yii\base\ViewNotFoundException] yii\base\ViewNotFoundException: The view file does not exist: C:\xampp\htdocs\sidokumentasi\backend\web\Foto\views\albums\viewalbum.php in C:\xampp\htdocs\sidokumentasi\vendor\yiisoft\yii2\base\View.php:229
+Stack trace:
+#0 C:\xampp\htdocs\sidokumentasi\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(backend\controllers\AlbumsController))
+#1 C:\xampp\htdocs\sidokumentasi\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('viewalbum', Array, Object(backend\controllers\AlbumsController))
+#2 C:\xampp\htdocs\sidokumentasi\backend\controllers\AlbumsController.php(61): yii\base\Controller->render('viewalbum', Array)
+#3 [internal function]: backend\controllers\AlbumsController->actionViewalbum('15')
+#4 C:\xampp\htdocs\sidokumentasi\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#5 C:\xampp\htdocs\sidokumentasi\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\sidokumentasi\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('viewalbum', Array)
+#7 C:\xampp\htdocs\sidokumentasi\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('albums/viewalbu...', Array)
+#8 C:\xampp\htdocs\sidokumentasi\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\xampp\htdocs\sidokumentasi\backend\web\index.php(17): yii\base\Application->run()
+#10 {main}
+2018-04-30 23:46:58 [::1][1][fkm0bj8nhsbkf47h07ue6m8uh2][info][application] $_GET = [
+    'id' => '15'
+]
+
+$_COOKIE = [
+    '_csrf-backend' => 'd28ecd4a93c2a888b6d91a92d411d20ca9a9d9748cea21fc00754511fbc79ee9a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"QWU6Cv1To6_iQYSxydn2IBNgGf6T6Tb1\";}'
+    'advanced-backend' => 'fkm0bj8nhsbkf47h07ue6m8uh2'
+    '_identity-backend' => 'fe9b2a2c19da0b96dc8528a624b038b7340eee2e53da66a951ac4ebd48d7bdeba:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"pGqGiG3c0DYvW2_QQS6amtpM-7DVegzD\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost/sidokumentasi/backend/web/index.php/albums/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7,ms;q=0.6'
+    'HTTP_COOKIE' => '_csrf-backend=d28ecd4a93c2a888b6d91a92d411d20ca9a9d9748cea21fc00754511fbc79ee9a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22QWU6Cv1To6_iQYSxydn2IBNgGf6T6Tb1%22%3B%7D; advanced-backend=fkm0bj8nhsbkf47h07ue6m8uh2; _identity-backend=fe9b2a2c19da0b96dc8528a624b038b7340eee2e53da66a951ac4ebd48d7bdeba%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22pGqGiG3c0DYvW2_QQS6amtpM-7DVegzD%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\xampp\\php;C:\\composer;C:\\Program Files\\Git\\cmd;C:\\Users\\Novia\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Novia\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Novia\\AppData\\Local\\GitHubDesktop\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.29 (Win32) OpenSSL/1.1.0g PHP/7.2.0 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Win32) OpenSSL/1.1.0g PHP/7.2.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/sidokumentasi/backend/web/index.php'
+    'REMOTE_PORT' => '65006'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=15'
+    'REQUEST_URI' => '/sidokumentasi/backend/web/index.php/albums/viewalbum?id=15'
+    'SCRIPT_NAME' => '/sidokumentasi/backend/web/index.php'
+    'PATH_INFO' => '/albums/viewalbum'
+    'PATH_TRANSLATED' => 'C:\\xampp\\htdocs\\albums\\viewalbum'
+    'PHP_SELF' => '/sidokumentasi/backend/web/index.php/albums/viewalbum'
+    'REQUEST_TIME_FLOAT' => 1525124818.133
+    'REQUEST_TIME' => 1525124818
+]
+2018-04-30 23:50:16 [::1][1][fkm0bj8nhsbkf47h07ue6m8uh2][error][yii\base\ViewNotFoundException] yii\base\ViewNotFoundException: The view file does not exist: C:\xampp\htdocs\sidokumentasi\backend\web\Foto\views\albums\viewalbum.php in C:\xampp\htdocs\sidokumentasi\vendor\yiisoft\yii2\base\View.php:229
+Stack trace:
+#0 C:\xampp\htdocs\sidokumentasi\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(backend\controllers\AlbumsController))
+#1 C:\xampp\htdocs\sidokumentasi\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('viewalbum', Array, Object(backend\controllers\AlbumsController))
+#2 C:\xampp\htdocs\sidokumentasi\backend\controllers\AlbumsController.php(61): yii\base\Controller->render('viewalbum', Array)
+#3 [internal function]: backend\controllers\AlbumsController->actionViewalbum('15')
+#4 C:\xampp\htdocs\sidokumentasi\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#5 C:\xampp\htdocs\sidokumentasi\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\sidokumentasi\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('viewalbum', Array)
+#7 C:\xampp\htdocs\sidokumentasi\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('albums/viewalbu...', Array)
+#8 C:\xampp\htdocs\sidokumentasi\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\xampp\htdocs\sidokumentasi\backend\web\index.php(17): yii\base\Application->run()
+#10 {main}
+2018-04-30 23:50:16 [::1][1][fkm0bj8nhsbkf47h07ue6m8uh2][info][application] $_GET = [
+    'id' => '15'
+]
+
+$_COOKIE = [
+    '_csrf-backend' => 'd28ecd4a93c2a888b6d91a92d411d20ca9a9d9748cea21fc00754511fbc79ee9a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"QWU6Cv1To6_iQYSxydn2IBNgGf6T6Tb1\";}'
+    'advanced-backend' => 'fkm0bj8nhsbkf47h07ue6m8uh2'
+    '_identity-backend' => 'fe9b2a2c19da0b96dc8528a624b038b7340eee2e53da66a951ac4ebd48d7bdeba:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"pGqGiG3c0DYvW2_QQS6amtpM-7DVegzD\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost/sidokumentasi/backend/web/index.php/albums/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7,ms;q=0.6'
+    'HTTP_COOKIE' => '_csrf-backend=d28ecd4a93c2a888b6d91a92d411d20ca9a9d9748cea21fc00754511fbc79ee9a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22QWU6Cv1To6_iQYSxydn2IBNgGf6T6Tb1%22%3B%7D; advanced-backend=fkm0bj8nhsbkf47h07ue6m8uh2; _identity-backend=fe9b2a2c19da0b96dc8528a624b038b7340eee2e53da66a951ac4ebd48d7bdeba%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22pGqGiG3c0DYvW2_QQS6amtpM-7DVegzD%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\xampp\\php;C:\\composer;C:\\Program Files\\Git\\cmd;C:\\Users\\Novia\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Novia\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Novia\\AppData\\Local\\GitHubDesktop\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.29 (Win32) OpenSSL/1.1.0g PHP/7.2.0 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Win32) OpenSSL/1.1.0g PHP/7.2.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/sidokumentasi/backend/web/index.php'
+    'REMOTE_PORT' => '65011'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=15'
+    'REQUEST_URI' => '/sidokumentasi/backend/web/index.php/albums/viewalbum?id=15'
+    'SCRIPT_NAME' => '/sidokumentasi/backend/web/index.php'
+    'PATH_INFO' => '/albums/viewalbum'
+    'PATH_TRANSLATED' => 'C:\\xampp\\htdocs\\albums\\viewalbum'
+    'PHP_SELF' => '/sidokumentasi/backend/web/index.php/albums/viewalbum'
+    'REQUEST_TIME_FLOAT' => 1525125016.407
+    'REQUEST_TIME' => 1525125016
+]
+2018-04-30 23:50:17 [::1][1][fkm0bj8nhsbkf47h07ue6m8uh2][error][yii\base\ViewNotFoundException] yii\base\ViewNotFoundException: The view file does not exist: C:\xampp\htdocs\sidokumentasi\backend\web\Foto\views\albums\viewalbum.php in C:\xampp\htdocs\sidokumentasi\vendor\yiisoft\yii2\base\View.php:229
+Stack trace:
+#0 C:\xampp\htdocs\sidokumentasi\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(backend\controllers\AlbumsController))
+#1 C:\xampp\htdocs\sidokumentasi\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('viewalbum', Array, Object(backend\controllers\AlbumsController))
+#2 C:\xampp\htdocs\sidokumentasi\backend\controllers\AlbumsController.php(61): yii\base\Controller->render('viewalbum', Array)
+#3 [internal function]: backend\controllers\AlbumsController->actionViewalbum('15')
+#4 C:\xampp\htdocs\sidokumentasi\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#5 C:\xampp\htdocs\sidokumentasi\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\sidokumentasi\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('viewalbum', Array)
+#7 C:\xampp\htdocs\sidokumentasi\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('albums/viewalbu...', Array)
+#8 C:\xampp\htdocs\sidokumentasi\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\xampp\htdocs\sidokumentasi\backend\web\index.php(17): yii\base\Application->run()
+#10 {main}
+2018-04-30 23:50:17 [::1][1][fkm0bj8nhsbkf47h07ue6m8uh2][info][application] $_GET = [
+    'id' => '15'
+]
+
+$_COOKIE = [
+    '_csrf-backend' => 'd28ecd4a93c2a888b6d91a92d411d20ca9a9d9748cea21fc00754511fbc79ee9a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"QWU6Cv1To6_iQYSxydn2IBNgGf6T6Tb1\";}'
+    'advanced-backend' => 'fkm0bj8nhsbkf47h07ue6m8uh2'
+    '_identity-backend' => 'fe9b2a2c19da0b96dc8528a624b038b7340eee2e53da66a951ac4ebd48d7bdeba:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"pGqGiG3c0DYvW2_QQS6amtpM-7DVegzD\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost/sidokumentasi/backend/web/index.php/albums/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7,ms;q=0.6'
+    'HTTP_COOKIE' => '_csrf-backend=d28ecd4a93c2a888b6d91a92d411d20ca9a9d9748cea21fc00754511fbc79ee9a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22QWU6Cv1To6_iQYSxydn2IBNgGf6T6Tb1%22%3B%7D; advanced-backend=fkm0bj8nhsbkf47h07ue6m8uh2; _identity-backend=fe9b2a2c19da0b96dc8528a624b038b7340eee2e53da66a951ac4ebd48d7bdeba%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22pGqGiG3c0DYvW2_QQS6amtpM-7DVegzD%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\xampp\\php;C:\\composer;C:\\Program Files\\Git\\cmd;C:\\Users\\Novia\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Novia\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Novia\\AppData\\Local\\GitHubDesktop\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.29 (Win32) OpenSSL/1.1.0g PHP/7.2.0 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Win32) OpenSSL/1.1.0g PHP/7.2.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/sidokumentasi/backend/web/index.php'
+    'REMOTE_PORT' => '65013'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=15'
+    'REQUEST_URI' => '/sidokumentasi/backend/web/index.php/albums/viewalbum?id=15'
+    'SCRIPT_NAME' => '/sidokumentasi/backend/web/index.php'
+    'PATH_INFO' => '/albums/viewalbum'
+    'PATH_TRANSLATED' => 'C:\\xampp\\htdocs\\albums\\viewalbum'
+    'PHP_SELF' => '/sidokumentasi/backend/web/index.php/albums/viewalbum'
+    'REQUEST_TIME_FLOAT' => 1525125017.439
+    'REQUEST_TIME' => 1525125017
+]
+2018-04-30 23:50:17 [::1][1][fkm0bj8nhsbkf47h07ue6m8uh2][error][yii\base\ViewNotFoundException] yii\base\ViewNotFoundException: The view file does not exist: C:\xampp\htdocs\sidokumentasi\backend\web\Foto\views\albums\viewalbum.php in C:\xampp\htdocs\sidokumentasi\vendor\yiisoft\yii2\base\View.php:229
+Stack trace:
+#0 C:\xampp\htdocs\sidokumentasi\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(backend\controllers\AlbumsController))
+#1 C:\xampp\htdocs\sidokumentasi\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('viewalbum', Array, Object(backend\controllers\AlbumsController))
+#2 C:\xampp\htdocs\sidokumentasi\backend\controllers\AlbumsController.php(61): yii\base\Controller->render('viewalbum', Array)
+#3 [internal function]: backend\controllers\AlbumsController->actionViewalbum('15')
+#4 C:\xampp\htdocs\sidokumentasi\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#5 C:\xampp\htdocs\sidokumentasi\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\sidokumentasi\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('viewalbum', Array)
+#7 C:\xampp\htdocs\sidokumentasi\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('albums/viewalbu...', Array)
+#8 C:\xampp\htdocs\sidokumentasi\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\xampp\htdocs\sidokumentasi\backend\web\index.php(17): yii\base\Application->run()
+#10 {main}
+2018-04-30 23:50:17 [::1][1][fkm0bj8nhsbkf47h07ue6m8uh2][info][application] $_GET = [
+    'id' => '15'
+]
+
+$_COOKIE = [
+    '_csrf-backend' => 'd28ecd4a93c2a888b6d91a92d411d20ca9a9d9748cea21fc00754511fbc79ee9a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"QWU6Cv1To6_iQYSxydn2IBNgGf6T6Tb1\";}'
+    'advanced-backend' => 'fkm0bj8nhsbkf47h07ue6m8uh2'
+    '_identity-backend' => 'fe9b2a2c19da0b96dc8528a624b038b7340eee2e53da66a951ac4ebd48d7bdeba:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"pGqGiG3c0DYvW2_QQS6amtpM-7DVegzD\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://localhost/sidokumentasi/backend/web/index.php/albums/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7,ms;q=0.6'
+    'HTTP_COOKIE' => '_csrf-backend=d28ecd4a93c2a888b6d91a92d411d20ca9a9d9748cea21fc00754511fbc79ee9a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22QWU6Cv1To6_iQYSxydn2IBNgGf6T6Tb1%22%3B%7D; advanced-backend=fkm0bj8nhsbkf47h07ue6m8uh2; _identity-backend=fe9b2a2c19da0b96dc8528a624b038b7340eee2e53da66a951ac4ebd48d7bdeba%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22pGqGiG3c0DYvW2_QQS6amtpM-7DVegzD%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\xampp\\php;C:\\composer;C:\\Program Files\\Git\\cmd;C:\\Users\\Novia\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Novia\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Novia\\AppData\\Local\\GitHubDesktop\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.29 (Win32) OpenSSL/1.1.0g PHP/7.2.0 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Win32) OpenSSL/1.1.0g PHP/7.2.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/sidokumentasi/backend/web/index.php'
+    'REMOTE_PORT' => '65014'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=15'
+    'REQUEST_URI' => '/sidokumentasi/backend/web/index.php/albums/viewalbum?id=15'
+    'SCRIPT_NAME' => '/sidokumentasi/backend/web/index.php'
+    'PATH_INFO' => '/albums/viewalbum'
+    'PATH_TRANSLATED' => 'C:\\xampp\\htdocs\\albums\\viewalbum'
+    'PHP_SELF' => '/sidokumentasi/backend/web/index.php/albums/viewalbum'
+    'REQUEST_TIME_FLOAT' => 1525125017.886
+    'REQUEST_TIME' => 1525125017
+]
